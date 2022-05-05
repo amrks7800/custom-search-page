@@ -19,9 +19,10 @@ button.onclick = () => {
 window.onload = () => {
   if (time < 12) {
     greetingDiv.innerHTML = "Good Morning, Amr";
+    section.classList.remove("evening");
   } else {
     greetingDiv.innerHTML = "Good Evening, Amr";
-    section.style.backgroundImage = `url(../src/sunset.jpg)`;
+    section.classList.add("evening");
   }
 };
 
