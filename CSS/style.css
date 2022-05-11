@@ -61,6 +61,12 @@ section .greetings {
   right: 40px;
   font-weight: 700;
 }
+@media (max-width: 767px) {
+  section .greetings {
+    position: static !important;
+    margin: 30px auto;
+  }
+}
 section .container {
   display: flex;
   align-items: center;
