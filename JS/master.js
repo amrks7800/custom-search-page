@@ -5,6 +5,7 @@ let inputField = document.querySelector(".search-bar .input-field input");
 let section = document.querySelector("section");
 let button = document.querySelector("button");
 let greetingDiv = document.querySelector(".greetings");
+let buttonRepos = document.getElementById("repos");
 
 window.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
@@ -28,9 +29,19 @@ window.onload = () => {
 
 function getSearchResult() {
   if (inputField.value !== "") {
-    let query = inputField.value;
-    let need = `${url}${query}`;
-    window.open(need);
+    if (inputField.value == "who is your master") {
+      window.alert("My Master Is Amr");
+    } else if (inputField.value === "show repos") {
+      buttonRepos.click();
+    } else {
+      let query = inputField.value;
+      let need = `${url}${query}`;
+      window.open(need);
+    }
   }
   inputField.value = "";
 }
+
+buttonRepos.addEventListener("click", () => {
+  window.open("file:///E:projects/JS APPS/repos/index.html");
+});

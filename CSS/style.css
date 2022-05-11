@@ -34,7 +34,7 @@ body {
 section {
   position: relative;
   padding: 10px 15px;
-  background-image: url(../src/sun-shine.jpg);
+  background-image: url(../src/sunshine.webp);
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
@@ -77,6 +77,11 @@ section .container .avatar {
   top: 40px;
   left: 40px;
   z-index: 2;
+}
+@media (max-width: 400px) {
+  section .container .avatar {
+    display: none;
+  }
 }
 section .container .avatar img {
   max-width: 100%;
@@ -130,6 +135,10 @@ section .container .search-btn {
   font-weight: 700;
   font-size: 1.1em;
   z-index: 2;
+  opacity: 0.85;
+}
+section .container #repos {
+  margin-left: 10px;
 }
 
 /* End Section */
