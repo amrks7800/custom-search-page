@@ -80,7 +80,7 @@ section .container .avatar {
 }
 @media (max-width: 767px) {
   section .container .avatar {
-    display: none;
+    display: none !important;
   }
 }
 section .container .avatar img {
