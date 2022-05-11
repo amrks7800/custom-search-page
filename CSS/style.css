@@ -64,7 +64,7 @@ section .greetings {
 @media (max-width: 767px) {
   section .greetings {
     position: static !important;
-    margin: 30px auto;
+    margin: 30px auto -50px;
   }
 }
 section .container {
