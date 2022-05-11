@@ -78,7 +78,7 @@ section .container .avatar {
   left: 40px;
   z-index: 2;
 }
-@media (max-width: 400px) {
+@media (max-width: 767px) {
   section .container .avatar {
     display: none;
   }
